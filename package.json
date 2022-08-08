@@ -1,6 +1,5 @@
 {
-  "name": "open-web",
-  "version": "0.1.0",
+  "name": "codepie-web",
   "private": true,
   "scripts": {
     "dev": "next dev",
