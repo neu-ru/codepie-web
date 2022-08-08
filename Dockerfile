@@ -1,6 +1,6 @@
 FROM node:16
 
-WORKDIR /codepie-server
+WORKDIR /codepie-web
 
 COPY package-lock.json ./
 COPY package.json ./
