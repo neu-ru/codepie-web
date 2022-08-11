@@ -2,8 +2,9 @@ FROM node:16
 
 WORKDIR /codepie-web
 
-COPY package-lock.json ./
-COPY package.json ./
+COPY .npmrc .
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm ci
 
