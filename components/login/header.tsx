@@ -1,18 +1,16 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
-
-import LogoIcon from '../../assets/logo.png';
+import ImageLoader from "../imageLoader";
 
 export default function Header() {
   return (
     <Container>
-      <Image alt="logo" src={LogoIcon} />
+      <Image loader={ImageLoader} width={300} height={50} alt="logo" src="logo.svg" />
     </Container>
   );
 }
 
 const Container = styled.div`
-  display: flex;
-  margin: 34px;
-  margin-left: 13%;
+  position: absolute;
+  margin: 34px 34px 34px 13%;
 `;

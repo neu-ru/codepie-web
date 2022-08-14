@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+            href="https://assets.codepie.link/css/SpoqaHanSansNeo.css"
             rel="stylesheet"
             type="text/css"
           />
