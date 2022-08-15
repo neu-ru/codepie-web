@@ -1,11 +1,17 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import ImageLoader from "../imageLoader";
+import { getAssetURL } from '../../utils/asset';
 
 export default function Header() {
   return (
     <Container>
-      <Image loader={ImageLoader} width={300} height={50} alt="logo" src="logo.svg" />
+      <Image
+        loader={(props) => getAssetURL(props.src)}
+        width={300}
+        height={50}
+        alt="logo"
+        src="logo.svg"
+      />
     </Container>
   );
 }

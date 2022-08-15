@@ -4,13 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link
-            href="https://assets.codepie.link/css/SpoqaHanSansNeo.css"
-            rel="stylesheet"
-            type="text/css"
-          />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
