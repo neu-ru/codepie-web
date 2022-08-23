@@ -14,9 +14,11 @@ export default function Social() {
         <LoginButton
           icon="github.svg"
           message="깃허브로 시작하기"
-          onClick={() => {
-            router.push('http://localhost:11000/auth/github/redirect');
-          }}
+          onClick={() =>
+            router.push(
+              `${process.env.NEXT_PUBLIC_API_ENDPOINT}/auth/github/redirect`
+            )
+          }
         />
         <LoginButton
           icon="google.svg"
