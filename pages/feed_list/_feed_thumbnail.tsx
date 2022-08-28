@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import Avatar from "react-avatar";
 import Image from "next/image";
 import {getAssetURL} from "../../utils/asset";
-import DefaultChip from "./_chip";
+import Chip from "./_chip";
 
 export default function FeedThumbnail() {
     return (
@@ -37,8 +37,10 @@ function Profile() {
                 </div>
             </Row>
             <Row>
-                <DefaultChip label={"Front-End"}/>
-                <DefaultChip label={"Back-End"}/>
+                <Chip label={"Front-End"} selected={false} onClick={() => {
+                }}/>
+                <Chip label={"Back-End"} selected={true} onClick={() => {
+                }}/>
             </Row>
         </ProfileContainer>
     );

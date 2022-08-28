@@ -1,12 +1,32 @@
-import {Chip} from "@mui/material";
+import styled from "@emotion/styled";
 
 interface ChipProps {
-    label: string
+    label: string;
+    selected: boolean;
+    onClick: () => void;
 }
 
-export default function DefaultChip(props: ChipProps) {
+export default function Chip(props: ChipProps) {
     return (
-        <Chip label={props.label} color='primary' />
+        <RectangleChip className={props.selected ? "selected" : "unselected"} onClick={props.onClick}>
+            {props.label}
+        </RectangleChip>
     );
 
 }
+
+const RectangleChip = styled.button`
+  margin-right: 4px;
+  padding: 4px;
+  border-radius: 4px;
+
+  &.selected {
+    background: transparent;
+    border: 0.5px solid #EC8000;
+  }
+
+  &.unselected {
+    background: #A7A7A7;
+    border: 0;
+  }
+`;
