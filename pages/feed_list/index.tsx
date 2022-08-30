@@ -12,7 +12,8 @@ export default function FeedListPage() {
             <Body>
                 <Row>
                     <FeedList>
-                        <WriteFeed/>
+                        <WriteFeed onClick={() => {
+                        }}/>
                         <FeedThumbnail/>
                         <FeedThumbnail/>
                         <FeedThumbnail/>
