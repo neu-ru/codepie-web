@@ -19,6 +19,7 @@ const RectangleChip = styled.button`
   margin-right: 4px;
   padding: 4px;
   border-radius: 4px;
+  font-size: 12px;
 
   &.selected {
     background: transparent;

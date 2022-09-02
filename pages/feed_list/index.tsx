@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import Header from "./_header";
 import FeedThumbnail from "./_feed_thumbnail";
-import Side from "./_side";
+import Side from "./_side_card";
 import WriteFeed from "./_write_feed";
 
 export default function FeedListPage() {
