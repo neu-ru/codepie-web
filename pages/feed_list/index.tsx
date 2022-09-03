@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Header from "./_header";
 import FeedThumbnail from "./_feed_thumbnail";
 import Side from "./_side_card";
 import WriteFeed from "./_write_feed";
+import Header from "../../component/header/header";
 
 export default function FeedListPage() {
     return (
         <Container>
-            <Header/>
+            <Header isLoggedIn={true}/>
             <Body>
                 <Row>
                     <FeedList>
