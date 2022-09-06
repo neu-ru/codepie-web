@@ -65,6 +65,8 @@ const Title = styled.text`
 `;
 
 const Card = styled.div`
+  position: sticky;
+  top: 112px;
   padding: 32px;
   margin: 48px;
   box-shadow: 1px 1px 8px #1B1B1B;

@@ -26,6 +26,9 @@ export default function Header(props: HeaderProps) {
 }
 
 const Container = styled.div`
+  position: sticky;
+  top: 0;
+  background: #262424;
   display: flex;
-  margin: 34px 13% 34px 13%;
+  padding: 34px 13%; 
 `;

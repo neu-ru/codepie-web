@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "@emotion/styled";
 import FeedThumbnail from "./_feed_thumbnail";
 import Side from "./_side_card";
