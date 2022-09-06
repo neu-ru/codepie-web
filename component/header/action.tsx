@@ -9,7 +9,7 @@ interface ActionsProps {
 
 export default function Action(props: ActionsProps) {
     return (
-        <ActionsContainer visibility={props.visibility}>
+        <Container visibility={props.visibility}>
             <IconButton>
                 <Image
                     loader={(props) => getAssetURL(props.src)}
@@ -40,10 +40,10 @@ export default function Action(props: ActionsProps) {
                     src="image/User.svg"
                 />
             </IconButton>
-        </ActionsContainer>
+        </Container>
     )
 }
 
-const ActionsContainer = styled.div<ActionsProps>`
+const Container = styled.div<ActionsProps>`
   visibility: ${(props) => props.visibility}
 `;

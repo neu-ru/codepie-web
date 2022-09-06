@@ -1,8 +1,8 @@
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-import SideCard from "../pages/feed_list/_side_card";
+import SideCard from "../../../pages/feed_list/_side_card";
 
 export default {
-    title: 'codepie/Side',
+    title: 'codepie/SideCard',
     component: SideCard,
 } as ComponentMeta<typeof SideCard>;
 

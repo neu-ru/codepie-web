@@ -1,6 +1,6 @@
 import React from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
-import Chip from "../pages/feed_list/_chip";
+import Chip from "../../../pages/feed_list/_chip";
 
 export default {
     title: 'codepie/Chip',

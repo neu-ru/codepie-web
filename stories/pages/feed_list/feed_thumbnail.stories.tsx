@@ -1,6 +1,6 @@
 import React from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
-import FeedThumbnail from "../pages/feed_list/_feed_thumbnail";
+import FeedThumbnail from "../../../pages/feed_list/_feed_thumbnail";
 
 export default {
     title: 'codepie/FeedThumbnail',

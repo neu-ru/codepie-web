@@ -1,7 +1,7 @@
 import React from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
-import Chip from "../pages/feed_list/_chip";
-import WriteFeed from "../pages/feed_list/_write_feed";
+import Chip from "../../../pages/feed_list/_chip";
+import WriteFeed from "../../../pages/feed_list/_write_feed";
 
 export default {
     title: 'codepie/WriteFeed',

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Profile from "./_profile_row";
+import Profile from "../../component/profile/profile";
 
 // TODO: User 정보를 받도록 해야함.
 interface WriteFeedProps {
@@ -31,4 +31,3 @@ const Card = styled.div`
   box-shadow: 1px 1px 8px #1B1B1B;
   border-radius: 5px;
 `;
-

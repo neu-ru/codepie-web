@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import Chip from "./_chip";
-import Profile from "./_profile_row";
+import Profile from "../../component/profile/profile";
 import {Button, ThemeProvider} from "@mui/material";
 import CodePieTheme from "../../component/theme/theme";
 
