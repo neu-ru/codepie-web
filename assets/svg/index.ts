@@ -10,3 +10,5 @@ export { default as MessageSVG } from './message.svg';
 export { default as PiePieceSVG } from './pie_piece.svg';
 export { default as SearchSVG } from './search.svg';
 export { default as UserSVG } from './user.svg';
+export { default as TriDownSVG } from './tri_down.svg';
+export { default as CheckSVG } from './check.svg';

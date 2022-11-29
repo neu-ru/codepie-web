@@ -9,9 +9,7 @@ import { PiePieceSVG } from '../../assets/svg';
 export default function LoginLayout() {
   return (
     <Container>
-      <HeaderWrap>
-        <Header />
-      </HeaderWrap>
+      <Header />
       <Body>
         <Row>
           <Description />
@@ -27,15 +25,15 @@ export default function LoginLayout() {
 
 const Container = styled.div``;
 
-const HeaderWrap = styled.header``;
-
 const Body = styled.main``;
 
 const Row = styled.div`
   margin-top: 200px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 `;
 
 const Pie = styled.div`

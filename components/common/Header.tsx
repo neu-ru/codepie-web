@@ -1,8 +1,5 @@
 import styled from '@emotion/styled';
-import Image from 'next/image';
 import { LogoSVG } from '../../assets/svg';
-
-import { getAssetURL } from '../../utils/asset';
 
 interface Props {
   center?: React.ReactNode;
@@ -24,5 +21,5 @@ const Container = styled.header`
   align-items: center;
   padding-top: 34px;
   padding-bottom: 34px;
-  margin-left: 200px;
+  margin-left: 10%;
 `;
