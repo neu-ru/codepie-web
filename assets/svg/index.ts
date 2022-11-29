@@ -1,0 +1,12 @@
+export { default as BellSVG } from './bell.svg';
+export { default as BookmarkSVG } from './bookmark.svg';
+export { default as BoxSVG } from './box.svg';
+export { default as EyeSVG } from './eye.svg';
+export { default as GithubSVG } from './github.svg';
+export { default as GoogleSVG } from './google.svg';
+export { default as LikeSVG } from './like.svg';
+export { default as LogoSVG } from './logo.svg';
+export { default as MessageSVG } from './message.svg';
+export { default as PiePieceSVG } from './pie_piece.svg';
+export { default as SearchSVG } from './search.svg';
+export { default as UserSVG } from './user.svg';
