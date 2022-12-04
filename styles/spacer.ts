@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 interface SpacerProps {
-    width?: string;
-    height?: string;
+  width?: string;
+  height?: string;
 }
 
 const Spacer = styled.span<SpacerProps>`
