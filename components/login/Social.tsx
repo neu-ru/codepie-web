@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
 import LoginButton from './LoginButton';
+import { signIn } from 'next-auth/react';
 
 export default function Social() {
   const router = useRouter();
@@ -13,7 +14,7 @@ export default function Social() {
         <LoginButton
           icon="image/github.svg"
           message="깃허브로 시작하기"
-          onClick={() => router.push(`/login/info`)}
+          onClick={() => signIn('github', { callbackUrl: '/' })}
         />
         {/* <LoginButton
           icon="image/google.svg"

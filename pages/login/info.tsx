@@ -1,5 +1,5 @@
-import LoginInfoLayout from '../../components/login-info/LoginInfoLayout';
+import LoginInfo from '../../components/login-info/LoginInfo';
 
 export default function LoginInfoPage() {
-  return <LoginInfoLayout />;
+  return <LoginInfo />;
 }
