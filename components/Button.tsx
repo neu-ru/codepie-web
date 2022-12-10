@@ -1,13 +1,14 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
-type Props = React.PropsWithChildren<
-  React.ButtonHTMLAttributes<HTMLButtonElement>
->;
+interface Props
+  extends React.PropsWithChildren<
+    React.ButtonHTMLAttributes<HTMLButtonElement>
+  > {}
 
-function Button(props: Props, ref: React.ForwardedRef<HTMLButtonElement>) {
+const Button = (props: Props, ref: React.ForwardedRef<HTMLButtonElement>) => {
   return <Container ref={ref} {...props} />;
-}
+};
 
 export default React.forwardRef(Button);
 

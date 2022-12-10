@@ -2,13 +2,12 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import styled from '@emotion/styled';
-
 import { Position, TechStack } from '@prisma/client';
 
-import { LogoSVG } from '../../assets/svg';
-import Button from '../common/Button';
-import Select from '../common/Select';
-import * as api from '../../utils/api';
+import { LogoSVG } from '@/assets/svg';
+import * as api from '@/utils/api';
+import Select from '@/components/Select';
+import Button from '@/components/Button';
 import {
   POSITION_CODE_TO_LABEL,
   POSITION_LABEL_TO_CODE,
@@ -16,7 +15,7 @@ import {
   TECH_STACK_LABEL_TO_CODE,
 } from './code-kr';
 
-export default function LoginInfoLayout() {
+const LoginInfo = () => {
   const router = useRouter();
 
   const { data: positions } = useSWR<Position[]>('/api/positions', api.fetcher);
@@ -92,7 +91,9 @@ export default function LoginInfoLayout() {
       </ButtonWrapper>
     </Container>
   );
-}
+};
+
+export default LoginInfo;
 
 const Container = styled.div`
   min-height: 100vh;

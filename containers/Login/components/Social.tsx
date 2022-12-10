@@ -1,12 +1,12 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import styled from '@emotion/styled';
-import LoginButton from './LoginButton';
 import { signIn } from 'next-auth/react';
+import styled from '@emotion/styled';
 
-export default function Social() {
-  const router = useRouter();
+import LoginButton from './LoginButton';
 
+interface Props {}
+
+const Social = ({}: Props) => {
   return (
     <Container>
       <TitleText>개발자끼리 나누어보는 코드 이야기</TitleText>
@@ -27,7 +27,9 @@ export default function Social() {
       {/* <FindText>아이디 찾기</FindText> */}
     </Container>
   );
-}
+};
+
+export default Social;
 
 const Container = styled.div``;
 

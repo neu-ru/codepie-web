@@ -1,12 +1,12 @@
+import { LogoSVG } from '@/assets/svg';
 import styled from '@emotion/styled';
-import { LogoSVG } from '../../assets/svg';
 
 interface Props {
   center?: React.ReactNode;
   right?: React.ReactNode;
 }
 
-export default function Header({ center, right }: Props) {
+const Header = ({ center, right }: Props) => {
   return (
     <Container>
       <LogoSVG />
@@ -14,7 +14,9 @@ export default function Header({ center, right }: Props) {
       {right}
     </Container>
   );
-}
+};
+
+export default Header;
 
 const Container = styled.header`
   display: flex;

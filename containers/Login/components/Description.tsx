@@ -1,13 +1,17 @@
 import styled from '@emotion/styled';
 
-export default function Description() {
+interface Props {}
+
+const Description = ({}: Props) => {
   return (
     <Container>
       <Text>더 완벽한 코드를 위해</Text>
       <Text>코드를 나누는 시간</Text>
     </Container>
   );
-}
+};
+
+export default Description;
 
 const Container = styled.div``;
 

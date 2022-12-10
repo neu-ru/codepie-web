@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import { GithubSVG, GoogleSVG } from '../../assets/svg';
+
+import { GithubSVG, GoogleSVG } from '@/assets/svg';
 
 interface Props {
   icon: string;
@@ -7,7 +8,7 @@ interface Props {
   onClick: () => void;
 }
 
-export default function LoginButton(props: Props) {
+const LoginButton = (props: Props) => {
   return (
     <Container onClick={props.onClick}>
       {props.icon.includes('github') && <GithubSVG />}
@@ -15,7 +16,9 @@ export default function LoginButton(props: Props) {
       <Message>{props.message}</Message>
     </Container>
   );
-}
+};
+
+export default LoginButton;
 
 const Container = styled.button`
   padding: 12px;

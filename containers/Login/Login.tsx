@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Header from '../common/Header';
-import Description from './Description';
-import Social from './Social';
-import { PiePieceSVG } from '../../assets/svg';
+import { PiePieceSVG } from '@/assets/svg';
+import Header from '@/components/Header';
+import Description from './components/Description';
+import Social from './components/Social';
 
-export default function LoginLayout() {
+const Login = () => {
   return (
     <Container>
       <Header />
@@ -21,7 +21,9 @@ export default function LoginLayout() {
       </Pie>
     </Container>
   );
-}
+};
+
+export default Login;
 
 const Container = styled.div``;
 

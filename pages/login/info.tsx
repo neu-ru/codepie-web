@@ -1,5 +1,7 @@
-import LoginInfo from '../../components/login-info/LoginInfo';
+import LoginInfo from '@/containers/LoginInfo';
 
-export default function LoginInfoPage() {
+const LoginInfoPage = () => {
   return <LoginInfo />;
-}
+};
+
+export default LoginInfoPage;

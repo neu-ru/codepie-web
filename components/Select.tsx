@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { CheckSVG, TriDownSVG } from '../../assets/svg';
-import colors from '../../styles/colors';
+import { CheckSVG, TriDownSVG } from '@/assets/svg';
+import colors from '@/styles/colors';
 
-type Props = {
+interface Props {
   items: { label: string; value: string }[];
   placeholder?: string;
   onChange?: (value: string | string[]) => void;
   multiple?: boolean;
-};
+}
 
 export default function Select({
   items,
@@ -123,11 +123,11 @@ const ItemsWrapper = styled.div`
   }
 `;
 
-type ItemProp = {
+interface ItemProp {
   label: string;
   onClick?: VoidFunction;
   isSelected?: boolean;
-};
+}
 
 function Item({ label, onClick, isSelected }: ItemProp) {
   return (
