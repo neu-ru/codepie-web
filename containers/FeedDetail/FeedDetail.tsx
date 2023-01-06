@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 
 import Header from '@/components/Header';
+import ReviewCard from './ReviewCard';
 
+// TODO: 들어오는 data에 따라 props 추가, ReviewList map 추가
 const FeedDatail = () => {
   return (
     <Container>
@@ -22,10 +24,28 @@ const FeedDatail = () => {
               Reviewer Comment<ReviewCount>4</ReviewCount>
             </ReviewHeader>
             <ReviewList>
-              <ReviewCard>asd</ReviewCard>
-              <ReviewCard>asd</ReviewCard>
-              <ReviewCard>asd</ReviewCard>
-              <ReviewCard>asd</ReviewCard>
+              <ReviewCard
+                name="markyul"
+                date="1분 전"
+                comment="handleChange 함수의 로직이 빠진 것 같습니다."
+              />
+              <ReviewCard
+                name="Jtree"
+                date="32분 전"
+                comment="구조 분해 할당을 사용하여 const { Option } = Select;
+라고 선언하면 더 깔끔한 코드가 될 것 같네요~"
+              />
+              <ReviewCard
+                name="DONXUX"
+                date="2시간 전"
+                comment="style 코드는 inline-css 보다 컴포넌트 하나로 분리하여
+따로 작성하는 것이 유지보수 측면에서 좋곘어요 😇"
+              />
+              <ReviewCard
+                name="hongchascone"
+                date="1일 전"
+                comment="Select 컴포넌트 퍼가요~♡"
+              />
             </ReviewList>
           </Review>
         </Row>
@@ -79,7 +99,7 @@ const ProfileName = styled.span`
 const FeedDate = styled.span`
   margin-left: 20px;
   color: #a7a7a7;
-  font-size: 14akwmpx;
+  font-size: 14px;
 `;
 
 const CodeCard = styled.div`
@@ -101,12 +121,4 @@ const ReviewCount = styled.span`
 
 const ReviewList = styled.ul`
   margin-top: 60px;
-`;
-
-const ReviewCard = styled.li`
-  margin-bottom: 30px;
-  height: 150px;
-  box-shadow: 1px 1px 8px #1b1b1b;
-  border-radius: 5px;
-  list-style: none;
 `;
