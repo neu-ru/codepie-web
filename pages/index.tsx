@@ -15,9 +15,6 @@ const Home = () => {
       <div>
         <button onClick={() => signOut()}>로그아웃</button>
       </div>
-      <div>
-        <button onClick={() => router.push('/feedDetail')}>피드상세</button>
-      </div>
     </div>
   );
 };
