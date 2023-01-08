@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "g": "node scripts/generate.js",
+    "generate": "node scripts/generate.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
