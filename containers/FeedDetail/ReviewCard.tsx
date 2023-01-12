@@ -1,13 +1,41 @@
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+
 import styled from '@emotion/styled';
+import CommentForm from './CommentForm';
 
 interface Props {
   image?: string;
   name: string;
   date: string;
   comment: string;
+  isOutSideClick: boolean;
+  setIsOutSideClick: Dispatch<SetStateAction<boolean>>;
+  // reviewLines: number[];
+  // isFocus: boolean;
+  // onFocus: () => void;
 }
 // TODO: date 형태에 따라 수정
-const ReviewCard = ({ image, name, date, comment }: Props) => {
+const ReviewCard = ({
+  image,
+  name,
+  date,
+  comment,
+  isOutSideClick,
+  setIsOutSideClick,
+}: Props) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    if (isOutSideClick) {
+      setIsClicked(false);
+    }
+  }, [isOutSideClick]);
+
+  const handleClickCard = () => {
+    setIsClicked(true);
+    setIsOutSideClick(false);
+  };
+
   const profileImage = image ? (
     <ProfileImage src={image} />
   ) : (
@@ -15,20 +43,22 @@ const ReviewCard = ({ image, name, date, comment }: Props) => {
   );
 
   return (
-    <Container>
+    <Container isClicked={isClicked} onClick={handleClickCard}>
       <ReviewInfo>
         {profileImage}
         <ProfileName>{name}</ProfileName>
         <ReviewDate>{date}</ReviewDate>
       </ReviewInfo>
       <Comment>{comment}</Comment>
+      {isClicked && <CommentForm />}
     </Container>
   );
 };
 
 export default ReviewCard;
 
-const Container = styled.li`
+const Container = styled.li<{ isClicked: boolean }>`
+  cursor: ${(props) => (props.isClicked ? 'default' : 'pointer')};
   margin-bottom: 30px;
   padding: 20px;
   box-shadow: 1px 1px 8px #1b1b1b;
@@ -48,7 +78,7 @@ const ReviewDate = styled.span`
 `;
 
 const Comment = styled.div`
-  margin-top: 10px;
+  margin: 10px 0;
   font-size: 14px;
 `;
 
