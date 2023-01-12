@@ -24,4 +24,5 @@ const Container = styled.header`
   padding-top: 34px;
   padding-bottom: 34px;
   margin-left: 10%;
+  margin-right: 10%;
 `;

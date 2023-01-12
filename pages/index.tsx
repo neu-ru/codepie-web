@@ -1,9 +1,13 @@
+import FeedDetail from '@/containers/FeedDetail';
 import { signOut, useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
 const Home = () => {
   const router = useRouter();
   const { data: session } = useSession();
+
+  return <FeedDetail />;
+
   return (
     <div>
       <div style={{ whiteSpace: 'pre' }}>
